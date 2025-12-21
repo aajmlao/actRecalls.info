@@ -8,6 +8,7 @@ function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 1000,
     height: 800,
+    title: 'ActRecall',
     show: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
